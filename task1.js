@@ -5,14 +5,21 @@
 
 
 // пробую викликати функцію ДО оголошення
-// хочу подивитись як працює hoisting
+// (як працює hoisting)
+// пробую використати function expression до оголошення
 
 try {
+
     console.log(
-        getCalculation("area")("circle", 10)
+        calculatePerimeter("circle", 10)
     );
-} catch (error) {
-    console.log("Error before declarations:", error.message);
+
+} catch(error) {
+
+    console.log(
+        "Error before declaration:",
+        error.message
+    );
 }
 
 
